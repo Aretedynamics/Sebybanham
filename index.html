@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Seb Banham — personal portfolio covering projects, academic profile, experience, MTB, gym and contact." />
+  <meta name="theme-color" content="#06111f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Seb Banham | Portfolio" />
+  <meta property="og:description" content="Personal portfolio covering projects, academic profile, experience, MTB, gym and contact." />
+  <meta property="og:image" content="assets/logo-dark.png" />
+  <meta name="twitter:card" content="summary" />
+  <title>Seb Banham | Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/logo-dark.png" />
+  <link rel="apple-touch-icon" href="assets/logo-dark.png" />
+  <link rel="stylesheet" href="styles.css?v=email-chooser-1" />
+</head>
+<body>
+  <div class="site-shell">
+    <canvas class="ambient-canvas" id="ambientCanvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <button class="brand nav-trigger" data-target="home" aria-label="Go to Home">
+        <img src="assets/logo-white.png" alt="" class="brand-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+        <span class="brand-fallback">SB</span>
+      </button>
+
+      <nav class="top-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-target="home">Home</button>
+        <button class="nav-link" data-target="journey">Journey</button>
+        <button class="nav-link" data-target="projects">Projects</button>
+        <button class="nav-link" data-target="academic">Academic</button>
+        <button class="nav-link" data-target="experience">Experience</button>
+        <button class="nav-link" data-target="mtb">MTB</button>
+        <button class="nav-link" data-target="gym">Gym</button>
+        <button class="nav-link" data-target="contact">Contact</button>
+      </nav>
+    </header>
+
+    <main class="page-stage" id="pageStage">
+      <section class="page active" data-page="home" aria-labelledby="home-title">
+        <div class="home-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Personal portfolio</p>
+            <h1 id="home-title">Seb Banham</h1>
+            <p class="hero-tagline">Building projects, discipline and direction.</p>
+            <p class="hero-support">A-level student studying Maths, Further Maths, Physics and Chemistry, with interests across mathematics, technology, finance and engineering.</p>
+            <div class="hero-actions">
+              <button class="primary-action nav-trigger" data-target="journey">Explore my journey</button>
+              <button class="secondary-action nav-trigger" data-target="projects">View projects</button>
+            </div>
+          </div>
+
+          <div class="hero-orbit" aria-label="Interactive identity area">
+            <div class="hero-object" id="heroObject" tabindex="0" aria-label="Animated Seb Banham logo placeholder">
+              <img src="assets/logo-white.png" alt="Seb Banham logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+              <span class="logo-placeholder">SB</span>
+              <span class="object-ring ring-one"></span>
+              <span class="object-ring ring-two"></span>
+            </div>
+
+            <div class="stat-constellation" aria-label="Homepage highlights">
+              <button class="stat-node node-a" data-target="gym"><strong>130kg</strong><span>Bench Press</span><em>Bench press achieved in May 2026 at age 17.</em></button>
+              <button class="stat-node node-b" data-target="projects"><strong>Project Manager</strong><span>ARETE Dynamics</span><em>Leading planning, timelines, sponsorship and team organisation.</em></button>
+              <button class="stat-node node-c" data-target="academic"><strong>A-levels</strong><span>Maths · Further Maths · Physics · Chemistry</span><em>Academic focus across maths, science and applied problem-solving.</em></button>
+              <button class="stat-node node-d" data-target="experience"><strong>NPLQ</strong><span>Qualified Lifeguard</span><em>Qualified in safety, rescue response and public responsibility.</em></button>
+              <button class="stat-node node-e" data-target="mtb"><strong>YT Jeffsy</strong><span>Custom MTB Build</span><em>Full-suspension bike build with custom performance upgrades.</em></button>
+              <button class="stat-node node-f" data-target="projects"><strong>2027</strong><span>STEM Racing</span><em>Long-term competition project combining engineering, design and business.</em></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="portal-strip" aria-label="Page previews">
+          <button class="portal-card nav-trigger" data-target="journey"><span class="portal-animation timeline-dot"></span><strong>Journey</strong><em>Timeline</em></button>
+          <button class="portal-card nav-trigger" data-target="projects"><span class="portal-animation stacked-cards"></span><strong>Projects</strong><em>Builds</em></button>
+          <button class="portal-card nav-trigger" data-target="academic"><span class="portal-animation orbit-dots"></span><strong>Academic</strong><em>Study</em></button>
+          <button class="portal-card nav-trigger" data-target="experience"><span class="portal-animation badge-check"></span><strong>Experience</strong><em>Responsibility</em></button>
+          <button class="portal-card nav-trigger" data-target="mtb"><span class="portal-animation wheel-spin"></span><strong>MTB</strong><em>Bike</em></button>
+          <button class="portal-card nav-trigger" data-target="gym"><span class="portal-animation progress-rise"></span><strong>Gym</strong><em>Progression</em></button>
+        </div>
+      </section>
+
+      <section class="page" data-page="journey" aria-labelledby="journey-title">
+        <div class="page-heading"><p class="eyebrow">Timeline</p><h2 id="journey-title">Journey</h2><p>How discipline became direction.</p></div>
+        <div class="timeline" aria-label="Journey timeline">
+          <article class="timeline-card reveal"><span class="timeline-phase">Foundation</span><h3>Competitive Swimming</h3><p>Built early discipline, confidence and consistency through school swimming and Chelmsford City Swimming Club.</p><div class="tag-row"><span>Discipline</span><span>Consistency</span><span>Confidence</span></div></article>
+          <article class="timeline-card reveal"><span class="timeline-phase">Foundation</span><h3>Mountain Biking</h3><p>Developed control, confidence and practical problem-solving through riding progression and bike setup.</p><div class="tag-row"><span>Control</span><span>Confidence</span><span>Progression</span></div></article>
+          <article class="timeline-card reveal"><span class="timeline-phase">Discipline</span><h3>Strength Training</h3><p>Built a consistent approach to progression, leading to a 130kg bench press achieved in May 2026 at age 17.</p><div class="tag-row"><span>Consistency</span><span>Patience</span><span>Progression</span></div></article>
+          <article class="timeline-card reveal"><span class="timeline-phase">Discipline</span><h3>NPLQ Lifeguard Qualification</h3><p>Gained formal training in water safety, rescue response and responsibility in public environments.</p><div class="tag-row"><span>Responsibility</span><span>Safety</span><span>Awareness</span></div></article>
+          <article class="timeline-card reveal"><span class="timeline-phase">Direction</span><h3>A-level STEM Focus</h3><p>Studying Maths, Further Maths, Physics and Chemistry to build a strong base in analytical and applied problem-solving.</p><div class="tag-row"><span>Maths</span><span>Science</span><span>Problem-Solving</span></div></article>
+          <article class="timeline-card reveal"><span class="timeline-phase">Direction</span><h3>Project Manager — ARETE Dynamics</h3><p>Leading planning, timelines, sponsorship organisation and team coordination for a STEM Racing project.</p><div class="tag-row"><span>Leadership</span><span>Organisation</span><span>Communication</span></div></article>
+          <article class="timeline-card reveal"><span class="timeline-phase">Direction</span><h3>Building Digital Projects</h3><p>Creating websites and digital tools to present work clearly, organise information and develop technical skills.</p><div class="tag-row"><span>Web</span><span>Coding</span><span>Presentation</span></div></article>
+          <article class="timeline-card reveal"><span class="timeline-phase">Next</span><h3>Future Direction</h3><p>Exploring pathways across mathematics, finance, actuarial science, technology and engineering.</p><div class="tag-row"><span>Maths</span><span>Finance</span><span>Technology</span><span>Engineering</span></div></article>
+        </div>
+      </section>
+
+      <section class="page" data-page="projects" aria-labelledby="projects-title">
+        <div class="page-heading"><p class="eyebrow">Builds</p><h2 id="projects-title">Projects</h2><p>Ideas turned into evidence.</p></div>
+        <article class="featured-project reveal">
+          <div><p class="eyebrow">Featured project</p><h3>ARETE Dynamics</h3><p class="card-subtitle">Project Manager · STEM Racing 2027</p><p>Leading planning, timelines, sponsorship organisation and team coordination for a Year 12 STEM Racing team. The project combines engineering, branding, business development, communication and competitive problem-solving.</p><div class="tag-row"><span>Project Management</span><span>STEM Racing</span><span>Sponsorship</span><span>Team Coordination</span><span>Web Presence</span></div><div class="button-row"><button class="secondary-action project-detail-button">View project details</button><a class="primary-action" href="https://aretedynamics.co.uk" target="_blank" rel="noopener">Visit ARETE website</a></div></div>
+          <div class="project-preview"><img src="assets/arete-preview.jpg" alt="Screenshot of the ARÊTE Dynamics About page" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" /><span class="image-placeholder">ARETE Preview</span></div>
+        </article>
+        <div class="project-grid">
+          <article class="project-card reveal"><span class="status">In Development</span><h3>Personal Portfolio</h3><p>Designing and building a personal website to present academic, professional and personal development in a clear digital format.</p><div class="tag-row"><span>Web Design</span><span>UI/UX</span><span>Personal Branding</span></div></article>
+          <article class="project-card reveal"><span class="status">Active</span><h3>ARETE Web & Brand System</h3><p>Helping develop the digital identity, website structure and presentation style for ARETE Dynamics.</p><div class="tag-row"><span>Branding</span><span>Web Design</span><span>STEM Racing</span><span>Communication</span></div></article>
+          <article class="project-card reveal"><span class="status">Ongoing</span><h3>Coding Projects</h3><p>Building small tools and experiments using coding to solve problems, automate tasks and develop technical confidence.</p><div class="tag-row"><span>Python</span><span>Web</span><span>Problem Solving</span><span>Automation</span></div></article>
+          <article class="project-card reveal"><span class="status">Ongoing</span><h3>Custom MTB Build</h3><p>Upgrading and refining a YT Jeffsy with performance-focused component choices and setup decisions.</p><div class="tag-row"><span>Practical Engineering</span><span>Research</span><span>Setup</span><span>Performance</span></div></article>
+          <article class="project-card reveal"><span class="status">Active</span><h3>Sponsorship & Business Development</h3><p>Supporting ARETE Dynamics through sponsorship planning, outreach structure and professional presentation.</p><div class="tag-row"><span>Communication</span><span>Business</span><span>Planning</span><span>Outreach</span></div></article>
+          <article class="project-card reveal"><span class="status">Active</span><h3>Visual Identity Design</h3><p>Creating design assets, team visuals and clothing concepts to support a more professional project identity.</p><div class="tag-row"><span>Design</span><span>Branding</span><span>Presentation</span></div></article>
+        </div>
+      </section>
+
+      <section class="page" data-page="academic" aria-labelledby="academic-title">
+        <div class="page-heading"><p class="eyebrow">Study</p><h2 id="academic-title">Academic Profile</h2><p>Mathematics, science and applied problem-solving.</p></div>
+        <div class="content-grid two-col"><article class="glass-panel reveal"><h3>Current Studies</h3><div class="subject-grid"><div><strong>Maths</strong><span>Problem-solving, modelling and logic</span></div><div><strong>Further Maths</strong><span>Deeper mathematical thinking</span></div><div><strong>Physics</strong><span>Systems, mechanics and applied concepts</span></div><div><strong>Chemistry</strong><span>Analysis, structure and evidence-based reasoning</span></div></div></article><article class="glass-panel reveal"><h3>Academic Direction</h3><p>My interests sit around mathematics, applied problem-solving and decision-making, with possible future routes including maths, actuarial science, finance, technology and engineering.</p></article></div>
+        <div class="achievement-grid"><article class="achievement-card reveal"><strong>GCSE Maths</strong><span>9</span></article><article class="achievement-card reveal"><strong>Extended Level 2 Edexcel Maths</strong><span>Distinction*</span></article><article class="achievement-card reveal"><strong>Combined Science</strong><span>9–8</span></article><article class="achievement-card reveal"><strong>Computer Science</strong><span>8</span></article><article class="achievement-card reveal"><strong>UKMT Senior Maths Challenge</strong><span>Gold Award</span></article><article class="achievement-card reveal"><strong>Best in School</strong><span>UKMT Senior Maths Challenge</span></article><article class="achievement-card reveal"><strong>Kangaroo Round</strong><span>Invited</span></article><article class="achievement-card reveal"><strong>M3C Challenge</strong><span>Participant</span></article><article class="achievement-card reveal"><strong>Ritangle Mathematics Competition</strong><span>Commended Team</span></article></div>
+        <div class="content-grid two-col"><article class="glass-panel reveal"><h3>Mathematical Problem-Solving</h3><p>Maths is my strongest academic area, especially problems that require strategy, modelling and deeper thinking rather than simply applying a memorised method.</p></article><article class="glass-panel reveal"><h3>Applied Coding Example</h3><p>Built a Python program in Year 10 to search for the best possible solution to a “Government Game” optimisation challenge set by a teacher.</p><div class="tag-row"><span>Python</span><span>Optimisation</span><span>Problem Solving</span><span>Independent Learning</span></div></article></div>
+      </section>
+
+      <section class="page" data-page="experience" aria-labelledby="experience-title">
+        <div class="page-heading"><p class="eyebrow">Responsibility</p><h2 id="experience-title">Experience</h2><p>Responsibility, communication and real-world confidence.</p></div>
+        <div class="experience-layout">
+          <div class="experience-group reveal"><span class="group-label">Work & Responsibility</span><article class="experience-card large"><h3>AirHop & Clip ’n Climb</h3><p class="card-subtitle">Court Marshal, Party Host and General Assistant</p><p>Customer-facing role combining safety supervision, rule enforcement, party organisation and communication with families.</p><p>As a Court Marshal, I supervise activity areas, enforce safety rules and help maintain a controlled environment for customers. As a Party Host, I organise customer parties by checking guests in, showing them to their room, coordinating food, engaging with children and handling allergy forms.</p><div class="tag-row"><span>Responsibility</span><span>Communication</span><span>Organisation</span><span>Safety Awareness</span><span>Customer Service</span></div></article><article class="experience-card"><h3>NPLQ Lifeguard Qualification</h3><p>Formal training in water safety, rescue response and responsibility in public environments.</p><div class="tag-row"><span>Safety</span><span>Calm Under Pressure</span><span>Public Responsibility</span><span>Awareness</span></div></article></div>
+          <div class="experience-group reveal"><span class="group-label">Coaching & Leadership</span><article class="experience-card"><h3>School Swimming Club Volunteer</h3><p>Volunteered with younger students through DofE, using previous swimming experience to support technique and confidence.</p><p>Helped younger years during school swimming sessions by observing technique, giving guidance and supporting a safe, structured environment.</p><div class="tag-row"><span>Coaching</span><span>Patience</span><span>Communication</span><span>Leadership</span></div></article><article class="experience-card"><h3>M3C Challenge</h3><p>Worked on a time-limited mathematical modelling challenge, leading one question and supporting two others.</p><div class="tag-row"><span>Teamwork</span><span>Mathematical Modelling</span><span>Time Pressure</span><span>Structured Thinking</span></div></article></div>
+          <div class="experience-group reveal"><span class="group-label">Upcoming Technical Experience</span><article class="experience-card"><span class="status">Upcoming</span><h3>Snap Finance Work Experience</h3><p>Currently preparing by learning SQL ahead of work experience, with the aim of using maths and code to build functional tools.</p><div class="tag-row"><span>SQL</span><span>Data</span><span>Coding</span><span>Applied Maths</span><span>Preparation</span></div></article></div>
+        </div>
+      </section>
+
+      <section class="page" data-page="mtb" aria-labelledby="mtb-title">
+        <div class="page-heading"><p class="eyebrow">Bike</p><h2 id="mtb-title">MTB</h2><p>Custom performance, setup and progression.</p></div>
+        <div class="bike-build reveal"><div class="bike-stage" aria-label="Interactive YT Jeffsy bike build"><div class="bike-map-plane"><img src="assets/bike-placeholder.PNG" alt="YT Jeffsy custom mountain bike placeholder" onerror="this.style.display='none';" /><div class="bike-diagram" aria-hidden="true"><span class="bike-wheel front"></span><span class="bike-wheel rear"></span><span class="bike-frame top"></span><span class="bike-frame down"></span><span class="bike-frame chain"></span><span class="bike-frame seat"></span><span class="bike-fork"></span><span class="bike-bar"></span></div><button class="hotspot h-wheelset" data-spec="wheelset" aria-label="Wheelset hotspot"></button><button class="hotspot h-tyres" data-spec="tyres" aria-label="Tyres hotspot"></button><button class="hotspot h-brake" data-spec="brake" aria-label="Rear brake hotspot"></button><button class="hotspot h-rotor" data-spec="rotor" aria-label="Front rotor hotspot"></button><button class="hotspot h-shock" data-spec="shock" aria-label="Shock hotspot"></button><button class="hotspot h-fork" data-spec="fork" aria-label="Fork hotspot"></button><button class="hotspot h-cockpit" data-spec="cockpit" aria-label="Cockpit hotspot"></button><button class="hotspot h-finish" data-spec="finish" aria-label="Finishing details hotspot"></button><button class="hotspot h-custom" data-spec="custom" aria-label="Custom parts hotspot"></button></div></div><aside class="spec-card" id="specCard" aria-live="polite"><span class="eyebrow">YT Jeffsy</span><h3>Interactive bike build</h3><p>Hover or tap a glowing point to reveal the current build details.</p></aside></div>
+        <div class="content-grid three-col"><article class="glass-panel reveal"><h3>Riding Style</h3><p>Focused on jumps, control, confidence in the air and building a bike that feels playful but capable.</p></article><article class="glass-panel reveal"><h3>Progression with Sam</h3><p>Riding with Sam has helped turn hesitation into commitment. The “if you do it, I’ll do it” mindset has pushed confidence on features where commitment matters.</p><p class="small-detail">Having someone there to push with makes progression more fun and gives both riders the confidence to try features they might avoid alone.</p></article><article class="glass-panel reveal"><h3>Upgrade Philosophy</h3><p>I upgrade parts based on how the bike feels, what improves confidence, and what suits the riding I actually do.</p></article></div>
+        <div class="media-grid"><article class="media-card reveal"><img src="assets/danbury-common-step-up.jpg" alt="Seb Banham mountain bike beside a Danbury Common dirt jump" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" /><span class="image-placeholder">Riding Photo</span><h3>Danbury / Local Riding</h3></article><article class="media-card reveal"><img src="assets/twisted-oaks.jpg" alt="Rider sitting on a wooden feature at Twisted Oaks Bike Park" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" /><span class="image-placeholder">Bike Park Media</span><h3>Twisted Oaks / Bike Parks</h3></article><article class="media-card reveal"><span class="image-placeholder">Goals</span><h3>Future Tricks & Bigger Lines</h3></article></div>
+      </section>
+
+      <section class="page" data-page="gym" aria-labelledby="gym-title">
+        <div class="page-heading"><p class="eyebrow">Progression</p><h2 id="gym-title">Gym</h2><p>Progression, control and consistency.</p></div>
+        <div class="strength-feature-grid reveal"><article class="gym-feature"><div><span class="eyebrow">Weighted strength</span><h3>Weighted Dip</h3><p>Dips have been a consistent movement throughout my training, building pressing strength, control and weighted bodyweight progression.</p></div><strong class="big-number">+80kg</strong></article><article class="gym-feature"><div><span class="eyebrow">New focus</span><h3>Deadlift</h3><p>Recently started deadlifting and reached 160kg early on, with the goal of progressing towards 200kg through consistent, controlled training.</p></div><strong class="big-number">160kg</strong></article><article class="gym-feature"><div><span class="eyebrow">Feature lift</span><h3>Bench Press</h3><p>Achieved in May 2026 at age 17 after breaking through a long plateau.</p></div><strong class="big-number">130kg</strong></article></div>
+        <div class="bench-timeline reveal"><div class="bench-point"><strong>May 2024</strong><span>Started gym</span></div><div class="bench-point"><strong>Sep 2024</strong><span>60kg bench</span></div><div class="bench-point"><strong>Christmas 2024</strong><span>75kg bench</span></div><div class="bench-point"><strong>Mar 2025</strong><span>100kg bench</span></div><div class="bench-point plateau"><strong>2025 Plateau</strong><span>Stayed around 100kg for most of the year</span><em>A long plateau around 100kg made progression slower, but also made the jump to 130kg more meaningful.</em></div><div class="bench-point"><strong>May 2026</strong><span>130kg at age 17</span></div><div class="bench-point"><strong>2026 Goal</strong><span>140kg bench</span></div></div>
+        <div class="philosophy-grid"><article class="glass-panel reveal"><h3>Progression Through Patience</h3><p>Progress has not always been linear, especially during long plateaus, but consistency has mattered more than quick jumps.</p></article><article class="glass-panel reveal"><h3>Strength With Control</h3><p>Numbers matter, but only when the lift is controlled and repeatable.</p></article><article class="glass-panel reveal"><h3>Training Partnership</h3><p>Training with Adam H has made progression safer, more competitive and more enjoyable.</p><p class="small-detail">Having one consistent person to train with creates routine, accountability and the confidence to push close to limits without doing it alone. Adam is usually about a plate ahead on many exercises, which creates something to chase while keeping training fun and structured.</p></article><article class="glass-panel reveal"><h3>Testing Limits Carefully</h3><p>I like finding my limits across different movements, while building the consistency and control to do it properly.</p></article><article class="glass-panel reveal"><h3>Transferable Discipline</h3><p>The discipline from training carries into school, projects and sport.</p></article></div>
+        <div class="content-grid two-col"><article class="glass-panel reveal"><h3>Calisthenics Control</h3><ul class="clean-list"><li>L-sit to handstand</li><li>50+ push-ups in a row</li></ul></article><article class="glass-panel reveal"><h3>Weighted Strength</h3><ul class="clean-list"><li>Bodyweight +80kg dip, 1 rep max</li><li>Bodyweight +45kg pull-up, 3 reps</li><li>Bodyweight +20kg muscle-up</li></ul></article></div>
+        <div class="goal-row"><article class="goal-card reveal">140kg bench in 2026</article><article class="goal-card reveal">Continue weighted calisthenics progression</article><article class="goal-card reveal">Develop bodyweight control and technical skills</article><article class="goal-card reveal">Pushing limits, but with control</article></div>
+      </section>
+
+      <section class="page" data-page="contact" aria-labelledby="contact-title">
+        <div class="page-heading"><p class="eyebrow">Contact</p><h2 id="contact-title">Contact</h2><p>For opportunities, projects and a closer look at what I’m building.</p></div>
+        <div class="contact-grid"><a class="contact-card reveal email-choice-trigger" href="mailto:sebybanham@gmail.com?subject=Website%20enquiry" data-email-to="sebybanham@gmail.com" data-email-subject="Website enquiry" data-email-body="" aria-label="Choose email service for sebybanham@gmail.com"><span>Professional Email</span><strong>sebybanham@gmail.com</strong></a><a class="contact-card reveal email-choice-trigger" href="mailto:sebsebeats@gmail.com?subject=Website%20enquiry" data-email-to="sebsebeats@gmail.com" data-email-subject="Website enquiry" data-email-body="" aria-label="Choose email service for sebsebeats@gmail.com"><span>Personal / Creative Email</span><strong>sebsebeats@gmail.com</strong></a><a class="contact-card reveal email-choice-trigger" href="mailto:dynamicsarete@gmail.com?subject=ARETE%20Dynamics%20enquiry" data-email-to="dynamicsarete@gmail.com" data-email-subject="ARETE Dynamics enquiry" data-email-body="" aria-label="Choose email service for dynamicsarete@gmail.com"><span>ARETE Dynamics</span><strong>dynamicsarete@gmail.com</strong></a><a class="contact-card reveal" href="https://aretedynamics.co.uk" target="_blank" rel="noopener"><span>ARETE Website</span><strong>aretedynamics.co.uk</strong></a><a class="contact-card reveal" href="assets/Seb-Banham-CV-Website.pdf" download="Seb-Banham-Public-CV.pdf" target="_blank" rel="noopener"><span>Public CV</span><strong>Download Public CV</strong></a><a class="contact-card reveal email-choice-trigger" href="mailto:sebybanham@gmail.com?subject=Full%20CV%20Request&body=Hello%20Seb,%0D%0A%0D%0AI%20am%20requesting%20the%20full%20CV%20for%20...%0D%0A%0D%0AThanks." data-email-to="sebybanham@gmail.com" data-email-subject="Full CV Request" data-email-body="Hello Seb,&#10;&#10;I am requesting the full CV for ...&#10;&#10;Thanks." aria-label="Choose email service to request Seb Banham full CV"><span>Request Full CV</span><strong>Click here</strong></a><div class="contact-card reveal"><span>Personal Tag</span><strong>@sebsebeats</strong></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div><strong>Seb Banham</strong><span>@sebsebeats</span><small>Building projects, discipline and direction.</small></div><nav aria-label="Footer links"><a class="email-choice-trigger" href="mailto:sebybanham@gmail.com?subject=Website%20enquiry" data-email-to="sebybanham@gmail.com" data-email-subject="Website enquiry" data-email-body="" aria-label="Choose email service for sebybanham@gmail.com">Email</a><a href="assets/Seb-Banham-CV-Website.pdf" download="Seb-Banham-Public-CV.pdf" target="_blank" rel="noopener">Public CV</a><a href="https://aretedynamics.co.uk" target="_blank" rel="noopener">ARETE Dynamics</a></nav></footer>
+  </div>
+  <script src="script.js?v=email-chooser-1"></script>
+</body>
+</html>
